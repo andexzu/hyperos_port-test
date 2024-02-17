@@ -1,94 +1,83 @@
 # hyperos_port-test
 
-### 基于 https://github.com/ljc-fight/miui_port
+<div align="center">
 
-     
-简体中文&nbsp;&nbsp;|&nbsp;&nbsp;[Русский](README_ru-RU)
 
+# HyperOS Porting Project
+### Based on https://github.com/ljc-fight/miui_port
+
+[简体中文](/README.md)&nbsp;&nbsp;|&nbsp;&nbsp;English
 
 </div>
 
-## 简介
-- HyperOS 一键自动移植打包
+## Intro
+- HyperOS Porting Project for Android 13 devices "Onekey" script
 
+## Tested devices and portroms
+- Tested Devices: Xiaomi 10/Pro/Ultra(umi/cmi/cas) (with latest stock/xiaomi.eu MIUI14 ROM)
+- Tested Ports: Xiaomi Mi 13/13Pro/14/14Pro K70Pro Stable and Dev stock flashable zip、xiaomi.eu latest HyperOS ROM
 
-## 测试机型及版本
-- 测试机型小米10/Pro/Ultra MIUI 14最新版
-- 测试版本 小米12、小米13/Pro/Ultra、小米14/Pro HyperOS1.0 正式版和开发版 官方OTA包 & xiaomi.eu官改包
-- 测试版本 小米平板5 Pro 12.4（DAGU）
-
-
-## 正常工作
-- 人脸
-- 挖孔
-- 指纹
-- 相机
+## Working
+- Face unlock
+- Fringerprint
+- Camera(from leaked mi10s A13 based hyperos)
+- Automatic Brightness
 - NFC
-- 自动亮度
-- 通话息屏
-- 应用双开
-- 护眼模式
-- 带壳截屏
+- etc
 
 
 ## BUG
 
-- 等你发现
+- When unlocking device, the screen may flicker , Enabling "Disable HW overlays" in Developer options may help.
 
-## 说明
-- 以上CN ROM均基于小米10正式版(V14.0.4.0.TJBCNXM)底包
-- 欧版基于最新xiaomi.eu官方的最新MIUI14底包
+## Description
+- All the above testing is based on Xiaomi 10/10Pro/10 Ultra official/xiaomi.eu MIUI 14 version. for V-AB devices, tester needed. 
 
-## 平板系统
-移植平板HyperOS到手机，需要从其他正常手机HyperOS机型复制下面的软件
-Contacts MIUIAod MiuiHome MIUISecurityCenter  Mms  MIUIContentExtension  MIUIPackageInstaller
-
-
-## 如何使用
-- 在WSL、ubuntu、deepin等Linux下
+## How to use
+- On WSL、ubuntu、deepin and other Linux
 ```shell
     sudo apt update
     sudo apt upgrade
     sudo apt install git -y
-    # 克隆项目
+    # Clone project
     git clone https://github.com/toraidl/hyperos_port.git
     cd hyperos_port
-    # 安装依赖
+    # Install dependencies
     sudo ./setup.sh
-    # 开始移植
-    sudo ./port.sh <底包路径> <移植包路径>
+    # Start porting
+    sudo ./port.sh <baserom> <portrom>
 ```
-- 在macOS下
+- on macOS (AMD64)
 ```shell
-    # 安装brew
+    # Install brew
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-    # 克隆项目
+    # Clone project
     git clone https://github.com/toraidl/hyperos_port.git
     cd hyperos_port
-    # 安装依赖
+    # Install dependencies
     sudo ./setup.sh
-    # 开始移植
-    sudo ./port.sh <底包路径> <移植包路径>
+     # Start porting
+    sudo ./port.sh <baserom> <portrom>
 ```
-- 在Termux上(未测试)
+- On Termux Android (not tested)
 ```shell
     pkg update
     pkg upgrade
     pkg install git tsu -y
-    # 克隆项目
+    # Clone project
     git clone https://github.com/toraidl/hyperos_port.git
     cd hyperos_port/
-    # 安装依赖
+    # Install depenencies
     ./setup.sh
-    # 进入root模式
+    # Enter root mode 
     tsu
-    ./port.sh <底包路径> <移植包路径>
+    ./port.sh <baserom> <portrom>
 ```
-- 上述代码中，底包路径和移植包路径可以替换为链接
+- baserom and portrom can be a direct download link. you can get the ota download link  from third-party websites.
 
-## 感谢
-> 本项目使用了以下开源项目的部分或全部内容，感谢这些项目的开发者（排名顺序不分先后）。
+## Credits
+> In this project, some or all of the content is derived from the following open-source projects. Special thanks to the developers of these projects.
 
 - [「BypassSignCheck」by Weverses](https://github.com/Weverses/BypassSignCheck)
 - [「contextpatch」 by ColdWindScholar](https://github.com/ColdWindScholar/TIK)
