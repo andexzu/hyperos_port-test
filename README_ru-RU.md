@@ -2,18 +2,22 @@
 
 
 # HyperOS Porting Project
-### Based on https://github.com/ljc-fight/miui_port
+### 
+Основной источник проекта
+
+ https://github.com/ljc-fight/miui_port
 
 Русский&nbsp;&nbsp;|&nbsp;&nbsp;[English](/README.md)
 
 </div>
 
 ## Intro
-- HyperOS Porting Project for Android 13 devices "Onekey" script
 
-## Tested devices and portroms
-- Tested Devices: Xiaomi 10/Pro/Ultra(umi/cmi/cas) (with latest stock/xiaomi.eu MIUI14 ROM)
-- Tested Ports: Xiaomi Mi 13/13Pro/14/14Pro K70Pro Stable and Dev stock flashable zip、xiaomi.eu latest HyperOS ROM
+- Скрипт для портирования проекта HyperOS на      устройства Android 13 "Onekey"
+
+### Протестированные устройства и портромы
+- Протестированные устройства: Xiaomi 10/Pro/Ultra (umi/cmi/cas) (с последней версией/xiaomi.eu MIUI14 ROM)
+- Протестированные порты: Xiaomi Mi 13 /13Pro /14 /14Pro K70Pro Stable и Dev stock с возможностью прошивки zip、xiaomi.eu новейшее HyperOS прошивки
 
 ## Working
 - Face unlock
@@ -26,10 +30,10 @@
 
 ## BUG
 
-- When unlocking device, the screen may flicker , Enabling "Disable HW overlays" in Developer options may help.
+- При разблокировке устройства экран может мерцать, может помочь включение опции "Отключить наложения HW" в настройках разработчика.
 
-## Description
-- All the above testing is based on Xiaomi 10/10Pro/10 Ultra official/xiaomi.eu MIUI 14 version. for V-AB devices, tester needed. 
+## Описание
+- Все вышеуказанные тесты основаны на официальной версии Xiaomi 10/10Pro/10 Ultra/xiaomi.eu MIUI 14. для устройств V-AB необходим тестер.
 
 ## How to use
 - On WSL、ubuntu、deepin and other Linux
@@ -72,10 +76,10 @@
     tsu
     ./port.sh <baserom> <portrom>
 ```
-- baserom and portrom can be a direct download link. you can get the ota download link  from third-party websites.
+- baserom и portrom могут быть прямой ссылкой для скачивания. вы можете получить ссылку для скачивания ota со сторонних веб-сайтов.
 
-## Credits
-> In this project, some or all of the content is derived from the following open-source projects. Special thanks to the developers of these projects.
+## Кредиты
+> В этом проекте часть или весь контент взят из следующих проектов с открытым исходным кодом. Особая благодарность разработчикам этих проектов.
 
 - [「BypassSignCheck」by Weverses](https://github.com/Weverses/BypassSignCheck)
 - [「contextpatch」 by ColdWindScholar](https://github.com/ColdWindScholar/TIK)
