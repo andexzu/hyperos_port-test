@@ -2,8 +2,6 @@
 
 ### 基于 https://github.com/ljc-fight/miui_port
 
-简体中文&nbsp;&nbsp;|English&nbsp;&nbsp
-|Русский&nbsp;&nbsp;
 
 </div>
 
