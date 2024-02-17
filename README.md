@@ -6,7 +6,7 @@
 # HyperOS Porting Project
 ### Based on https://github.com/ljc-fight/miui_port
 
-[English](/README_ru-RU.md)&nbsp;&nbsp;|&nbsp;&nbsp;Русский
+English(/README_ru-RU.md)&nbsp;&nbsp;|&nbsp;&nbsp;[Русский]
 
 </div>
 
