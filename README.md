@@ -1,6 +1,5 @@
 # hyperos_port-test
 
-div align="center">
 
 # HyperOS 移植项目
 ### 基于 https://github.com/ljc-fight/miui_port
