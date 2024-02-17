@@ -1,11 +1,9 @@
 # hyperos_port-test
 
-
-# HyperOS 移植项目
 ### 基于 https://github.com/ljc-fight/miui_port
 
 简体中文&nbsp;&nbsp;|&nbsp;&nbsp;|[English];
-(/README_ru-RU.md)
+(/README_en-US.md)
 |&nbsp;&nbsp;[Русский](/README_ru-RU.md) 
 
 </div>
